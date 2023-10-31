@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Personal Portfolio"/>
+    <meta name="keywords" content="HTML, CSS, JavaSctipt, Bryson Collins"/>
+    <meta name="author" content="Kevin Kuang"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <title>Kevin's Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="coursework.html">Coursework</a></li>
+          <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Custom Twitter App</h2>
+        <img src="media/Projects/SimpleTweet_Scroll.gif" alt="Scrolling Through SimpleTweet">
+        <img src="media/Projects/SimpleTweet_Post.gif" alt="Posting on SimpleTweet">
+        <details>
+          <summary>SimpleTweet</summary>
+          <p>Developing <b>SimpleTweet</b> has been an exciting and educational experience. The project lead by CodePath taught us the application of the Recycler View and how to integrate API's within our applications.</p>
+        </details>
+      </section>
+      <section>
+        <h2>Personal Instagram App</h2>
+        <img src="media/Projects/Parstagram_Account.gif" alt="Making an Account on Parstagram">
+        <img src="media/Projects/Parstagram_Feed.gif" alt="Scrolling Through Parstagram Feed">
+        <details>
+          <summary>Parstagram</summary>
+          <p>Creating Parstagram was a fun and difficult project to execute. <b>Pastagram</b> was a project lead by CodePath to teach how the backend of a software app worked. We used the Parse platform as a small server and placed example data of a user, their message, and photo post.</p>
+        </details>
+      </section>
+      <section>
+        <h2>Cybersecurity Viruses</h2>
+        <canvas width="120" height="120">
+          <script>
+            const canvas = document.querySelector("canvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "purple";
+            ctx.fillRect(10, 20, 20, 100);
+            ctx.fillRect(100, 10, 20, 100);
+            ctx.fillRect(10, 100, 100, 20);
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(20, 30, 5, 5);
+          </script>
+        </canvas>
+        <details>
+          <summary>Understanding Vulnerabilities (CODE PROVIDED ONLY FOR TESTING ON YOUR OWN COMPUTER)</summary>
+          <img src="media/Projects/Multi-payload virus.png" alt="Code for a Multi-payload Virus">
+          <img src="media/Projects/Encrypted Virus.png" alt = "Code for Encrypted Virus">
+          <p>This project was learning about computer vulnerabilities and demonstrating how easy it can be for someone to create malware. The virus project was lead by CodePath to teach how malware is created and how to prevent ourselves from being exposed to malicious hackers. We used an operating system called Kali to learn how to protect ourselves. The viruses were created by a software called <strong>msfvenom</strong>.
+          <pre>
+            # Commands used for a Multi-payload Virus
+            msfvenom -a x86 --platform windows -p windows/messagebox TEXT="Your computer is in Danger" -f  raw > messageBox
+            msfvenom -c messageBox -a x86 --platform windows -p windows/speak_pwned -f exe -o pwnedVirus.exe 
+
+            # Commands used for an encrypted virus file 
+            msfvenom -a x86 --platform windows -p windows/messagebox TEXT="Encrypted Virus Testing" -e x86/shikata_ga_nai -i 3 -f python -o messageEncrypted
+            msfvenom -c messageEncrypted -a x86 --platform windows -p windows/speak_pwned -f exe -0 pyVirus.exe 
+          </pre>
+          <p>Distributing malware is <strong>illegal</strong> and the use of <code>msfvenom</code> is purely for educational and research purposes.</p>
+        </details>
+      </section>
+      <section>
+        <h2>Podcast on Data Collection</h2>
+        <audio controls>
+          <source src="media/sample-audio.mp3" type="audio/mp3">
+        </audio>
+        <details>
+          <summary>Ethics on Collecting User Data</summary>
+          <p>In a dynamic intersection of technology and ethics, I embarked on a collaborative podcast project at UCSD, bringing together a group of esteemed professors to delve into the critical topic of user data ethics. This venture served as a powerful medium to dissect the intricate balance between technology advancement and ethical considerations. With the guidance of my professors and a passionate team of students, we explored the complex world of data collection, data privacy, and the societal implications of modern technology. Each episode featured insightful discussions, diving deep into the ethical dilemmas posed by data collection in today's digital landscape. Through these conversations, I gained a profound understanding of the multifaceted challenges and responsibilities inherent in this ever-evolving field. This project not only expanded my academic horizons but also left me with a deeper appreciation for the critical need to navigate this digital frontier with a keen sense of ethics and responsibility.</p>
+          <h3>Main Takeaways</h3>
+          <ol>
+            <li>Interdisciplinary Insights: The project facilitated valuable interdisciplinary discussions by involving professors from various academic backgrounds, allowing for a well-rounded exploration of user data ethics.</li>
+            <li>Technology and Ethics Integration: The project highlighted the integral role of ethical considerations in the tech industry, emphasizing the importance of ethical frameworks and principles when dealing with user data.</li>
+            <li>Data Privacy Focus: The podcast project underscored the significance of data privacy awareness, exploring topics such as data protection, consent, and responsible data handling to ensure individuals' privacy rights are respected.</li>
+            <li>Complex Ethical Landscape: The experience illuminated the complexity of ethical discussions surrounding data collection in the digital age, emphasizing the need for comprehensive and nuanced approaches.</li>
+            <li>Responsibility and Accountability: The project emphasized the ethical responsibility and accountability that accompany advancements in technology and data collection, highlighting the need to strike a balance between innovation and ethical considerations.</li>
+          </ol>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>&copy; Designed by Kevin Kuang</p>
+    </footer>
+  </body>
+
+</html>
