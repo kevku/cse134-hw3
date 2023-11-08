@@ -1,0 +1,75 @@
+/* main.css */
+@import url(vars.css);
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--darkgreen-color);
+}
+
+#about_me {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+#work_display {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: auto;
+}
+section {
+  margin: 1rem;
+  border-radius: 2rem;
+}
+header {
+  margin: 2rem;
+  border-radius: .5rem;
+}
+.main_menu {
+  display: flex;
+  list-style-type: none;
+  margin: 20px;
+  width: 900px;
+}
+.main_menu li {
+  display: block;
+  width: 100px;
+  float: left;
+  margin-left: .5rem;
+  border: 1px solid #000;
+}
+.main_menu a {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+  background-color: white;
+  color: #009;
+}
+.main_menu a:hover {
+  background-color: var(--lightgreen-color);
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: auto;
+}
+#contact_info{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: var(--darkgray-color);
+  padding: 2rem;
+}
+#contact_info > ul {
+  font-size: 20px;
+}
+
+fieldset {
+  width: 20rem;
+}
