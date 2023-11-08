@@ -15,19 +15,23 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
+
 #work_display {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-template-rows: auto;
 }
+
 section {
   margin: 1rem;
   border-radius: 2rem;
 }
+
 header {
   margin: 2rem;
   border-radius: .5rem;
 }
+
 .main_menu {
   display: flex;
   list-style-type: none;
