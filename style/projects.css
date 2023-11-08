@@ -43,17 +43,41 @@ header {
 h1 {
   text-align: center;
 }
+h2 {
+  text-align: center;
+}
 
-#simple_tweet {
+.code_path {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
  grid-template-rows: auto;
- background-color: var(--lightgray-color);
+ place-items: center;
 }
 
+#simpletweet {
+  background-color: var(--lightgray-color);
+ }
+
 #parstagram {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
   background-color: var(--darkgray-color);
  }
+
+section {
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+.border_gif {
+  border-radius: 1rem;
+  margin-left: 2.5rem;
+  height: 75%;
+}
+
+.android_desc {
+  margin: 5rem;
+}
+
+.android_title {
+  margin-left: 5rem;
+}
+
