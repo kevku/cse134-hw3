@@ -94,6 +94,12 @@ fieldset {
   #about_me {
     display: block;
   }
+  ul.main_menu {
+    margin: 0;
+  }
+  ul.main_menu li {
+    width: 9.5%;
+  }
   #work_display {
     display: block;
   }
