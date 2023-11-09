@@ -121,6 +121,7 @@ fieldset {
   ul.main_menu {
     margin: 0;
     margin-left: 5rem;
+    display:block;
   }
   ul.main_menu li {
     width: 9.5%;

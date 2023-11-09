@@ -127,6 +127,7 @@ details > img {
   }
   ul.main_menu {
     margin: 0;
+    display:block;
   }
   ul.main_menu li {
     width: 9.5%;
