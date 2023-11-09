@@ -1,13 +1,16 @@
 /* main.css */
 @import url(vars.css);
 
+* {
+  font-family:'playpen_sansregular', Arial, Helvetica, sans-serif;
+}
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--background-color, darkblue);
+  color: var(--text-color, black);
 }
 
 header {
-  background-color: var(--darkgreen-color);
+  background-color: var(--darkgreen-color, darkgreen);
 }
 
 #about_me {
@@ -58,7 +61,7 @@ header {
   color: #009;
 }
 .main_menu a:hover {
-  background-color: var(--lightgreen-color);
+  background-color: var(--lightgreen-color, lightgreen);
   color: white;
 }
 h1 {
@@ -72,7 +75,7 @@ h1 {
 #contact_info{
   grid-column-start: 2;
   grid-column-end: 4;
-  background-color: var(--darkgray-color);
+  background-color: var(--darkgray-color, darkgray);
   padding: 2rem;
 }
 #contact_info > ul {

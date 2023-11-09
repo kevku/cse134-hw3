@@ -28,6 +28,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: playPen, sans-serif;
 }
 
 /* Prevent font size inflation */
@@ -98,3 +99,9 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+@font-face {
+  font-family: 'playpen_sansregular';
+  src: url('/font/playpensans-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

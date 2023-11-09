@@ -1,13 +1,17 @@
 /* projects.css */
 @import url(vars.css);
 
+* {
+  font-family:'playpen_sansregular', Arial, Helvetica, sans-serif;
+}
+
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--background-color, darkgray);
+  color: var(--text-color, black);
 }
 
 header {
-  background-color: var(--darkgreen-color);
+  background-color: var(--darkgreen-color, darkgreen);
 }
 
 header {
@@ -21,6 +25,7 @@ header {
   margin: 20px;
   width: 900px;
 }
+
 .main_menu li {
   display: block;
   width: 100px;
@@ -28,6 +33,7 @@ header {
   margin-left: .5rem;
   border: 1px solid #000;
 }
+
 .main_menu a {
   display: block;
   padding: 3px;
@@ -35,8 +41,9 @@ header {
   background-color: white;
   color: #009;
 }
+
 .main_menu a:hover {
-  background-color: var(--lightgreen-color);
+  background-color: var(--lightgreen-color, lightgreen);
   color: white;
 }
 
@@ -55,11 +62,11 @@ h2 {
 }
 
 #simpletweet {
-  background-color: var(--lightgray-color);
+  background-color: var(--lightgray-color, lightgray);
  }
 
 #parstagram {
-  background-color: var(--darkgray-color);
+  background-color: var(--darkgray-color, darkgray);
  }
 
 section {
@@ -82,10 +89,19 @@ section {
 }
 
 #viruses {
-  background-color: var(--lightgray-color);
+  background-color: var(--lightgray-color, lightgray);
 }
 #viruses details {
   margin-left: 2rem;
+}
+
+details {
+  background-color: color-mix(in srgb, red 50%, white 70%);
+  color: color(srgb 0.8 0 0.85);
+}
+
+article:has(p){
+  color: lightblue;
 }
 
 details > img {
@@ -98,7 +114,7 @@ details > img {
   } 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   nav {
     margin: 0;
   }
