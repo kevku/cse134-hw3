@@ -88,3 +88,33 @@ section {
   margin-left: 2rem;
 }
 
+@media (max-width: 500px) {
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  .code_path {
+    display: block;
+  }
+  ul.main_menu {
+    margin: 0;
+  }
+  ul.main_menu li {
+    width: 9.5%;
+  }
+  .border_gif {
+    width: 75%;
+  }
+
+  .android_title {
+    margin: auto;
+  }
+
+  .android_desc {
+    margin: 1rem;
+  }
+
+}
