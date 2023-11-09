@@ -25,6 +25,17 @@ header {
   grid-template-rows: auto;
 }
 
+span {
+  animation-name: colorChange;
+  animation-duration: 10s;
+}
+
+
+@keyframes colorChange {
+  from {color: blue;}
+  to {color: yellow;}
+}
+
 #resume {
   width: 500px;
   height: 700px;
@@ -46,6 +57,7 @@ header {
   margin: 20px;
   width: 900px;
 }
+
 .main_menu li {
   display: block;
   width: 100px;
@@ -53,6 +65,7 @@ header {
   margin-left: .5rem;
   border: 1px solid #000;
 }
+
 .main_menu a {
   display: block;
   padding: 3px;
@@ -60,13 +73,21 @@ header {
   background-color: white;
   color: #009;
 }
+
 .main_menu a:hover {
   background-color: var(--lightgreen-color, lightgreen);
   color: white;
 }
+
 h1 {
   text-align: center;
 }
+
+h3:hover {
+  transform: scale(1.2);
+  color: lightblue;
+}
+
 #contact {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
