@@ -83,7 +83,7 @@ fieldset {
   width: 20rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   nav {
     margin: 0;
   }
@@ -96,6 +96,7 @@ fieldset {
   }
   ul.main_menu {
     margin: 0;
+    margin-left: 5rem;
   }
   ul.main_menu li {
     width: 9.5%;

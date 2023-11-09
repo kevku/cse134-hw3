@@ -88,6 +88,16 @@ section {
   margin-left: 2rem;
 }
 
+details > img {
+  margin: 1rem;
+}
+
+@media (max-width: 1200px) {
+  details pre {
+    visibility: hidden;
+  } 
+}
+
 @media (max-width: 500px) {
   nav {
     margin: 0;
@@ -121,7 +131,5 @@ section {
     margin: 1rem;
   }
 
-  details pre {
-   visibility: hidden;
-  }
+
 }
