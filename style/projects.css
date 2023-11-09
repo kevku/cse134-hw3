@@ -81,3 +81,10 @@ section {
   margin-left: 5rem;
 }
 
+#viruses {
+  background-color: var(--lightgray-color);
+}
+#viruses details {
+  margin-left: 2rem;
+}
+

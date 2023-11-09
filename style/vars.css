@@ -61,11 +61,13 @@ button, input, label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
+/* Balance text wrapping on headings 
+Causing a css validator issue
 h1, h2,
 h3, h4 {
   text-wrap: balance;
 }
+*/
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
