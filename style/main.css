@@ -77,3 +77,16 @@ h1 {
 fieldset {
   width: 20rem;
 }
+
+@media (max-width: 500px) {
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  .about_me {
+    display: none;
+  }
+}
