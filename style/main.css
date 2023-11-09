@@ -86,7 +86,13 @@ fieldset {
     margin: 0;
     padding: 0;
   }
-  .about_me {
-    display: none;
+  #about_me {
+    display: block;
+  }
+  #work_display {
+    display: block;
+  }
+  #contact {
+    display: block;
   }
 }
