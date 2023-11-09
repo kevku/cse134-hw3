@@ -116,5 +116,12 @@ section {
   .android_desc {
     margin: 1rem;
   }
+  details > img {
+    width: 75%;
+    margin: 1rem;
+  }
 
+  details pre {
+   visibility: hidden;
+  }
 }
