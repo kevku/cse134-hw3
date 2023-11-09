@@ -101,7 +101,7 @@ fieldset {
     display: block;
   }
   #resume {
-    width: 375px;
-    height: 667px;
+    width: 70%;
+    height: 70%;
   }
 }
