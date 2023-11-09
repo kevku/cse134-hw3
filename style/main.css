@@ -22,6 +22,11 @@ header {
   grid-template-rows: auto;
 }
 
+#resume {
+  width: 500px;
+  height: 700px;
+}
+
 section {
   margin: 1rem;
   border-radius: 2rem;
@@ -94,5 +99,9 @@ fieldset {
   }
   #contact {
     display: block;
+  }
+  #resume {
+    width: auto;
+    height: auto;
   }
 }
